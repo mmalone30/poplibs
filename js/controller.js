@@ -8,7 +8,7 @@ app.controller('appCtrl', function ($scope, $timeout) {
 
   var lib = libs[Math.floor(Math.random()*libs.length)];
 
-  $scope.poplib = lib;
+  $scope.poplib = 0;
 
   $scope.randomLib = function(){
     // var lib = libs[Math.floor(Math.random()*libs.length)];

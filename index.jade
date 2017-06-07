@@ -3,7 +3,10 @@
   h1 Poplibs.
   h2 Madlibs on the internet.
   button(ng-click="randomLib()") Next Poplib
-
+.main-content.hero(ng-show='poplib==0')
+  .container
+    p.lead Write funny stories with your friends.
+    button(ng-click="randomLib()") Write a Poplib
 .main-content(ng-show='poplib==1')
   .container
     h4 Buddy Cops!
