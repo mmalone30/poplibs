@@ -1,0 +1,25 @@
+/*****************************************
+  Media Queries
+*****************************************/
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 13px;
+  }
+  .main-header {
+    h2 {
+      font-size:0;
+    }
+  }
+  .main-content {
+    padding:1.5em;
+    top:55px;
+  }
+  .lightbox {
+    .modal {
+      padding:2em;
+      margin:2em;
+    }
+  }
+
+}

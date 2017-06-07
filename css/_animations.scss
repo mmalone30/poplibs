@@ -1,0 +1,89 @@
+/************************************
+  Animations
+************************************/
+
+///////////
+// FADES //
+//////////
+
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+
+  }
+  100% {
+    opacity:0;
+
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+
+  }
+  100% {
+    opacity:1;
+
+  }
+}
+
+@keyframes fadeOutToLeft {
+  0% {
+    opacity:1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity:0;
+    transform: translateX(-12em);
+  }
+}
+
+@keyframes fadeInFromRight {
+  0% {
+    opacity:0;
+    transform: translateX(12em);
+  }
+  100% {
+    opacity:1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInComeDown {
+  0% {
+    opacity:0;
+    transform: translateY(-2em);
+  }
+  100% {
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutGoUp {
+  0% {
+    opacity:1;
+    transform: translateY(0em);
+  }
+  100% {
+    opacity:0;
+    transform: translateY(-2em);
+  }
+}
+
+.fadeOut {
+  animation-name:fadeOut;
+  animation-duration: 0.5s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
+}
+
+.fadeIn {
+  animation-name:fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+}

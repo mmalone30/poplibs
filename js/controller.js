@@ -53,7 +53,7 @@ app.controller('appCtrl', function ($scope, $timeout) {
       $scope.animal = '';
       $scope.monster = '';
       $scope.adjective3 = '';
-    },950);
+    },650);
 
 
 

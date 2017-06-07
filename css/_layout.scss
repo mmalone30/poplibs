@@ -1,0 +1,182 @@
+/************************************
+  Layout
+************************************/
+
+///////////
+// BODY //
+//////////
+
+html {
+  font-size:$fontSize;
+}
+
+body {
+  font-family: $font;
+  color: $textColor;
+
+  margin: 0;
+  padding:0;
+  font-weight:400;
+  line-height: $lineHeight;
+  font-size: $fontSize;
+  overflow-x: hidden;
+  &.stuck {
+    overflow: hidden;
+  }
+}
+
+/////////////////////
+// MAIN COMPONENTS //
+////////////////////
+
+.main-header {
+  display:flex;
+  align-items: baseline;
+  padding:1em;
+  background:$mainColor;
+  color:white;
+  h2 {
+    font-weight: 400;
+    margin-left: 0.5em;
+    flex:1;
+  }
+}
+
+.main-content {
+  padding:3em;
+
+  transition: all linear 0.5s;
+  position:absolute;
+  top:84px;
+  right:0em;
+  left:0em;
+}
+
+.main-content.ng-hide-add{
+  animation-name:fadeOutToLeft;
+  animation-duration: 0.75s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
+
+}
+
+.main-content.ng-hide-remove {
+  animation-name:fadeInFromRight;
+  animation-duration: 0.75s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.75s;
+}
+
+.container {
+  max-width:40em;
+
+  margin:0 auto;
+  position:relative;
+  min-height: 1px;
+}
+////////////
+//  FORMS //
+////////////
+
+.input-group {
+
+  label {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  .input {
+
+  }
+  input {
+    width:100%;
+    font-family: $font;
+    padding:8px;
+    font-size:1.75em;
+    border:0;
+    border-radius:3px;
+    background:$faintBlue;
+    color:$textColor;
+    transition:all ease-in-out 200ms;
+    &:focus {
+
+      outline:0;
+      transform:scale(1.05);
+    }
+
+  }
+  & + .input-group {
+    margin-top:1.5em;
+  }
+
+
+  &.focused {
+    label {
+      top:0;
+    }
+  }
+}
+
+.input-group + button {
+  margin-top:1.5em;
+}
+
+//////////////
+// LIGHTBOX //
+/////////////
+
+.lightbox {
+  position: fixed;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:$mainColor;
+  z-index: 100;
+  transition:all ease-in-out 200ms;
+  .modal {
+    background:white;
+    color:$textColor;
+    padding:4em;
+    max-width: 48em;
+    margin:0 auto;
+    border-radius:3px;
+    box-shadow:0 15px 50px rgba(0,0,0,0.2);
+    animation-name:fadeInComeDown;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-delay: 0.35s;
+  }
+  &.ng-hide-add {
+    animation-name:fadeOut;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    .modal {
+      animation-name:fadeOutGoUp;
+      animation-duration: 0.5s;
+      animation-fill-mode: backwards;
+      animation-iteration-count: 1;
+
+    }
+  }
+  &.ng-hide-remove{
+    animation-name:fadeIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+  }
+  &.slowFadeOut .modal {
+    animation-name:fadeOutGoUp;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    //animation-delay: 0.5s;
+  }
+}
