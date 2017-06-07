@@ -26,10 +26,12 @@ app.controller('appCtrl', function ($scope, $timeout) {
     $scope.doAnother = !$scope.doAnother;
     $scope.show = !$scope.show;
     document.body.scrollTop = 0;
-    lib = lib + 1;
-    lib = lib % libs.length;
-    $scope.poplib = libs[lib];
+
     $timeout(function(){
+
+      lib = lib + 1;
+      lib = lib % libs.length;
+      $scope.poplib = libs[lib];
       $scope.name1 = '';
       $scope.number = '';
       $scope.name2 = '';
@@ -51,7 +53,7 @@ app.controller('appCtrl', function ($scope, $timeout) {
       $scope.animal = '';
       $scope.monster = '';
       $scope.adjective3 = '';
-    },500);
+    },950);
 
 
 

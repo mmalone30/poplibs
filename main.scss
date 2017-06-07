@@ -30,6 +30,7 @@ body {
   font-weight:400;
   line-height: 1.5;
   font-size: 20px;
+  overflow-x: hidden;
   &.stuck {
     overflow: hidden;
   }
@@ -107,27 +108,28 @@ button + button {
 
 .main-content {
   padding:3em;
+
   transition: all linear 0.5s;
   position:absolute;
-  top:0em;
+  top:84px;
   right:0em;
   left:0em;
 }
 
 .main-content.ng-hide-add{
-  animation-name:fadeOut;
-  animation-duration: 0.5s;
+  animation-name:fadeOutToLeft;
+  animation-duration: 0.75s;
   animation-fill-mode: backwards;
   animation-iteration-count: 1;
 
 }
 
 .main-content.ng-hide-remove {
-  animation-name:fadeIn;
-  animation-duration: 0.5s;
+  animation-name:fadeInFromRight;
+  animation-duration: 0.75s;
   animation-fill-mode: backwards;
   animation-iteration-count: 1;
-  animation-delay: 0.5s;
+  animation-delay: 0.75s;
 }
 
 @keyframes fadeOut {
@@ -157,6 +159,7 @@ button + button {
     opacity:1;
     transform: translateX(0);
   }
+
   100% {
     opacity:0;
     transform: translateX(-12em);
@@ -213,6 +216,7 @@ button + button {
 
 .container {
   max-width:40em;
+
   margin:0 auto;
   position:relative;
   min-height: 1px;
@@ -275,7 +279,7 @@ button + button {
   left:0;
   right:0;
   bottom:0;
-  background:rgba(2,191,253,0.85);
+  background:$mainColor;
   z-index: 100;
   transition:all ease-in-out 200ms;
   .modal {
@@ -296,7 +300,7 @@ button + button {
     animation-name:fadeOut;
     animation-duration: 0.5s;
     animation-fill-mode: backwards;
-    animation-delay: 0.35s;
+    animation-delay: 0.5s;
     animation-iteration-count: 1;
     .modal {
       animation-name:fadeOutGoUp;
@@ -317,7 +321,7 @@ button + button {
     animation-duration: 0.5s;
     animation-fill-mode: backwards;
     animation-iteration-count: 1;
-    animation-delay: 0.5s;
+    //animation-delay: 0.5s;
   }
 }
 

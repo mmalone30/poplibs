@@ -3,8 +3,9 @@
   h1 Poplibs.
   h2 Madlibs on the internet.
   button(ng-click="randomLib()") Next Poplib
-.container
-  .main-content(ng-show='poplib==1')
+
+.main-content(ng-show='poplib==1')
+  .container
     h4 Buddy Cops!
     .input-group
       label Full Name for a guy
@@ -35,17 +36,9 @@
       .input
         input(type="text", ng-model="nickname")
     button(ng-click="show=!show") Read Story
-    .lightbox(ng-show='show')
-      .modal
-        p.lead
-          span.capitalize {{name1}}&nbsp;
-          | has just turned {{number | number}}, and only has a few more years to go before he 
-          | retires from the Los Angeles Police Department. {{name2}} has just lost his {{relative}} when she was {{death}}, 
-          | and doesn't care if he lives or dies. When they are paired together, {{name1}} has 
-          | problems with {{name2}}'s suicidal attitude towards work, as they investigate a {{noun}} baron dubbed "{{nickname}}".
-        button(ng-click="newLib()") Do Another
-        button(ng-click="redoLib()") Redo This One
-  .main-content(ng-show='poplib==2')
+    
+.main-content(ng-show='poplib==2')
+  .container
     h4 Hackers!
     .input-group
       label Boy's Name
@@ -73,16 +66,9 @@
         input(type="text", ng-model="company")
     
     button(ng-click="show = !show") Read Story
-    .lightbox(ng-show='show')
-      .modal
-        p.lead
-          | A teenage hacker finds himself framed for the theft of {{thingToSteal}} from a major corporation. 
-          | Master hacker {{name1}}, aka {{codeName}}, aka {{codeName2}}, has been banned from touching a keyboard 
-          | for {{number | number}} years after crashing over 1,500 {{company}} computers at the age of 11. Now keen to get back in 
-          | front of a monitor, he finds himself in more trouble than ever.
-        button(ng-click="newLib()") Do Another
-        button(ng-click="redoLib()") Redo This One
-  .main-content(ng-show='poplib==3')
+    
+.main-content(ng-show='poplib==3')
+  .container
     h4 Zombies!
     .input-group
       label A Type of Relative
@@ -110,17 +96,9 @@
         input(type="text", ng-model="people")
     
     button(ng-click="show = !show") Read Story
-    .lightbox(ng-show='show')
-      .modal
-        p.lead
-          | When her {{relative}} is turned into a zombie and attacks her, Ana just manages to escape, 
-          | only to realize her entire {{town}} neighborhood has been overrun by the walking dead. After being 
-          | questioned by {{adjective}} {{job}} Kenneth, Ana joins him and a small group that gravitates 
-          | to the {{place}} as a bastion of safety. Once they convince suspicious {{people}} that 
-          | they are not contaminated, the group bands together to fight the undead hordes.
-        button(ng-click="newLib()") Do Another
-        button(ng-click="redoLib()") Redo This One
-  .main-content(ng-show='poplib==4')
+    
+.main-content(ng-show='poplib==4')
+  .container
     h4 Aliens!
     .input-group
       label Adjective
@@ -144,16 +122,9 @@
         input(type="text", ng-model="noun")
     
     button(ng-click="show = !show") Read Story
-    .lightbox(ng-show='show')
-      .modal
-        p.lead
-          | In this {{adjective}} adventure, {{adjective2}} phenomena surface around the globe. The skies ignite. 
-          | Terror races through the world's {{place}}. As these extraordinary events unfold, it becomes increasingly clear 
-          | that a force of incredible magnitude has arrived; its mission: {{mission}} over the Fourth of July weekend. 
-          | The last hope to stop the destruction is an unlikely group of {{noun}} united by fate and unimaginable circumstances.
-        button(ng-click="newLib()") Do Another
-        button(ng-click="redoLib()") Redo This One
-  .main-content(ng-show='poplib==5')
+    
+.main-content(ng-show='poplib==5')
+  .container
     h4 Slasher!
     .input-group
       label Adjective
@@ -189,17 +160,10 @@
         input(type="text", ng-model="relative")
     
     button(ng-click="show = !show") Read Story
-    .lightbox(ng-show='show')
-      .modal
-        p.lead
-          | Against the advice of locals and police, {{name}} scours the eerie {{place}} 
-          | surrounding Crystal Lake for his missing {{relative}}. But the {{adjective}} {{noun}} of an abandoned summer camp are 
-          | not the only things he finds. {{adjective2}} killer Jason Voorhees lies in wait for a chance to use his 
-          | razor-sharp {{noun2}} on {{name}} and the group of college students who have come to the forest to {{verb}}.
-        button(ng-click="newLib()") Do Another
-        button(ng-click="redoLib()") Redo This One
+    
         
-  .main-content(ng-show='poplib==6')
+.main-content(ng-show='poplib==6')
+  .container
     h4 Frozen!
     .input-group
       label Adjective
@@ -229,13 +193,40 @@
     
     
     button(ng-click="show = !show") Read Story
-    .lightbox(ng-show='show')
-      .modal
-        p.lead
-          | When their kingdom becomes trapped in perpetual winter, {{adjective}} Anna joins forces with 
-          | {{job}} Kristoff and his {{animal}} sidekick to find Anna's sister, Snow Queen Elsa, 
-          | and break her icy spell. Although their epic journey leads them to encounters with {{adjective3}} 
-          | {{monster}}, a {{adjective2}} snowman, harsh conditions, and magic at every turn, Anna and 
-          | Kristoff bravely push onward in a race to save their kingdom from winter's cold grip.
-        button(ng-click="newLib()") Do Another
-        button(ng-click="redoLib()") Redo This One
+.lightbox(ng-show='show')
+  .modal
+    p.lead(ng-show="poplib==1")
+      span.capitalize {{name1}}&nbsp;
+      | has just turned {{number | number}}, and only has a few more years to go before he 
+      | retires from the Los Angeles Police Department. {{name2}} has just lost his {{relative}} when she was {{death}}, 
+      | and doesn't care if he lives or dies. When they are paired together, {{name1}} has 
+      | problems with {{name2}}'s suicidal attitude towards work, as they investigate a {{noun}} baron dubbed "{{nickname}}".
+    p.lead(ng-show='poplib==2')
+      | A teenage hacker finds himself framed for the theft of {{thingToSteal}} from a major corporation. 
+      | Master hacker {{name1}}, aka {{codeName}}, aka {{codeName2}}, has been banned from touching a keyboard 
+      | for {{number | number}} years after crashing over 1,500 {{company}} computers at the age of 11. Now keen to get back in 
+      | front of a monitor, he finds himself in more trouble than ever.
+    p.lead(ng-show='poplib==3')
+      | When her {{relative}} is turned into a zombie and attacks her, Ana just manages to escape, 
+      | only to realize her entire {{town}} neighborhood has been overrun by the walking dead. After being 
+      | questioned by {{adjective}} {{job}} Kenneth, Ana joins him and a small group that gravitates 
+      | to the {{place}} as a bastion of safety. Once they convince suspicious {{people}} that 
+      | they are not contaminated, the group bands together to fight the undead hordes.
+    p.lead(ng-show='poplib==4')
+      | In this {{adjective}} adventure, {{adjective2}} phenomena surface around the globe. The skies ignite. 
+      | Terror races through the world's {{place}}. As these extraordinary events unfold, it becomes increasingly clear 
+      | that a force of incredible magnitude has arrived; its mission: {{mission}} over the Fourth of July weekend. 
+      | The last hope to stop the destruction is an unlikely group of {{noun}} united by fate and unimaginable circumstances.
+    p.lead(ng-show='poplib==5')
+      | Against the advice of locals and police, {{name}} scours the eerie {{place}} 
+      | surrounding Crystal Lake for his missing {{relative}}. But the {{adjective}} {{noun}} of an abandoned summer camp are 
+      | not the only things he finds. {{adjective2}} killer Jason Voorhees lies in wait for a chance to use his 
+      | razor-sharp {{noun2}} on {{name}} and the group of college students who have come to the forest to {{verb}}.
+    p.lead(ng-show='poplib==6')
+      | When their kingdom becomes trapped in perpetual winter, {{adjective}} Anna joins forces with 
+      | {{job}} Kristoff and his {{animal}} sidekick to find Anna's sister, Snow Queen Elsa, 
+      | and break her icy spell. Although their epic journey leads them to encounters with {{adjective3}} 
+      | {{monster}}, a {{adjective2}} snowman, harsh conditions, and magic at every turn, Anna and 
+      | Kristoff bravely push onward in a race to save their kingdom from winter's cold grip.
+    button(ng-click="newLib()") Do Another
+    button(ng-click="redoLib()") Redo This One
