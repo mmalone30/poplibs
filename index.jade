@@ -35,7 +35,7 @@
       .input
         input(type="text", ng-model="nickname")
     button(ng-click="show=!show") Read Story
-    .lightbox(ng-show='show', ng-class='{"slowFadeOut":doAnother}')
+    .lightbox(ng-show='show')
       .modal
         p.lead
           span.capitalize {{name1}}&nbsp;

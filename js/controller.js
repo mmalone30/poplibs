@@ -1,6 +1,6 @@
 var app = angular.module('app', ['ngAnimate']);
 
-app.controller('appCtrl', function ($scope) {
+app.controller('appCtrl', function ($scope, $timeout) {
 
 
 
@@ -23,41 +23,43 @@ app.controller('appCtrl', function ($scope) {
   }
 
   $scope.newLib = function(){
+    $scope.doAnother = !$scope.doAnother;
+    $scope.show = !$scope.show;
+    document.body.scrollTop = 0;
     lib = lib + 1;
     lib = lib % libs.length;
     $scope.poplib = libs[lib];
-    $scope.doAnother = !$scope.doAnother;
+    $timeout(function(){
+      $scope.name1 = '';
+      $scope.number = '';
+      $scope.name2 = '';
+      $scope.relative = '';
+      $scope.nickname = '';
+      $scope.death = '';
+      $scope.noun = '';
+      $scope.codeName = '';
+      $scope.codeName2 = '';
+      $scope.thingToSteal = '';
+      $scope.company = '';
+      $scope.town = '';
+      $scope.adjective = '';
+      $scope.adjective2 = '';
+      $scope.mission = '';
+      $scope.place = '';
+      $scope.job = '';
+      $scope.people = '';
+      $scope.animal = '';
+      $scope.monster = '';
+      $scope.adjective3 = '';
+    },500);
 
-    $scope.show = !$scope.show;
-    $scope.name1 = '';
-    $scope.number = '';
-    $scope.name2 = '';
-    $scope.relative = '';
-    $scope.nickname = '';
-    $scope.death = '';
-    $scope.noun = '';
-    $scope.codeName = '';
-    $scope.codeName2 = '';
-    $scope.thingToSteal = '';
-    $scope.company = '';
-    $scope.town = '';
-    $scope.adjective = '';
-    $scope.adjective2 = '';
-    $scope.mission = '';
-    $scope.place = '';
-    $scope.job = '';
-    $scope.people = '';
-    $scope.animal = '';
-    $scope.monster = '';
-    $scope.adjective3 = '';
-    document.body.scrollTop = 0;
+
+
 
     //debugger;
   }
 
   $scope.redoLib = function(){
-
-
     $scope.show = !$scope.show;
     $scope.name1 = '';
     $scope.number = '';
