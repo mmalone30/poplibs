@@ -29,23 +29,7 @@ body {
 // MAIN COMPONENTS //
 ////////////////////
 
-.hero {
-  bottom:0;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  .lead {
-    font-size:4em;
-    font-weight: bold;
-    line-height: 1.25;
-    margin-bottom: 0.75em;
-  }
-  button {
-    padding:1em 2em;
-    font-size:1.25em;
-  }
-}
+
 
 .main-header {
   display:flex;
@@ -53,6 +37,10 @@ body {
   padding:1em;
   background:$mainColor;
   color:white;
+  animation-name:fadeIn;
+  animation-duration: 0.75s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
   h2 {
     font-weight: 400;
     margin-left: 0.5em;
@@ -68,6 +56,34 @@ body {
   top:70px;
   right:0em;
   left:0em;
+}
+
+.main-content.hero {
+  bottom:0;
+  top:0;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  .title {
+    display:flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 2em;
+    h1 {
+      margin-right: 0.5em;
+    }
+  }
+  .lead {
+    font-size:4em;
+    font-weight: bold;
+    line-height: 1.25;
+    margin-bottom: 0.25em;
+  }
+  button {
+    padding:1em 2em;
+    font-size:1.25em;
+  }
 }
 
 .main-content.ng-hide-add{

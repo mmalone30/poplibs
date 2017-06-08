@@ -1,11 +1,20 @@
 
-.main-header
+.main-header(ng-hide='poplib==0')
   h1 Poplibs.
   h2 Madlibs on the internet.
   button(ng-click="randomLib()") Next Poplib
 .main-content.hero(ng-show='poplib==0')
   .container
-    p.lead Write funny stories with your friends.
+    .title
+      h1 Poplibs.
+      h2 Madlibs on the internet.
+    p.lead 
+      span Write 
+      span.adjective {{adjectives[adjectiveIndex]}}&nbsp;
+      span stories with your 
+      span.noun {{nouns[nounIndex]}}
+      span .
+    p.sublead We ask you for some words, you get a funny little story.
     button(ng-click="randomLib()") Write a Poplib
 .main-content(ng-show='poplib==1')
   .container

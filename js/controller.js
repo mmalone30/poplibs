@@ -93,4 +93,26 @@ app.controller('appCtrl', function ($scope, $timeout) {
     story.show = !story.show;
   }
 
+  // $scope.imgIndex = 0;
+  // $timeout(function advanceSlide() {
+  //     $scope.imgIndex = ($scope.imgIndex + 1) % $scope.images.length;
+  //     $timeout(advanceSlide, 1000);
+  // });
+
+  $scope.adjectives = ["funny", "crazy", "weird", "dumb", "random", "gross", "silly"];
+
+  $scope.adjectiveIndex = 0;
+  $timeout(function advanceAdjective() {
+    $scope.adjectiveIndex = ($scope.adjectiveIndex + 1) % $scope.adjectives.length;
+    $timeout(advanceAdjective, 2000);
+  });
+
+  $scope.nouns = ["friends", "neighbors", "family", "whoever", "pets", "grandma", "dog", "own butt"];
+
+  $scope.nounIndex = 0;
+  $timeout(function advanceNoun() {
+    $scope.nounIndex = ($scope.nounIndex + 1) % $scope.nouns.length;
+    $timeout(advanceNoun, 2600);
+  });
+
 });
