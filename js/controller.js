@@ -4,7 +4,7 @@ app.controller('appCtrl', function ($scope, $timeout) {
 
 
 
-  var libs = [1, 2, 3, 4, 5, 6];
+  var libs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   var lib = libs[Math.floor(Math.random()*libs.length)];
 
@@ -53,6 +53,11 @@ app.controller('appCtrl', function ($scope, $timeout) {
       $scope.animal = '';
       $scope.monster = '';
       $scope.adjective3 = '';
+      $scope.ship = '';
+      $scope.name3 = '';
+      $scope.name4 = '';
+      $scope.name5 = '';
+      $scope.name6 = '';
     },650);
 
 
@@ -84,6 +89,11 @@ app.controller('appCtrl', function ($scope, $timeout) {
     $scope.animal = '';
     $scope.monster = '';
     $scope.adjective3 = '';
+    $scope.ship = '';
+    $scope.name3 = '';
+    $scope.name4 = '';
+    $scope.name5 = '';
+    $scope.name6 = '';
     document.body.scrollTop = 0;
 
     //debugger;

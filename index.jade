@@ -1,8 +1,9 @@
 
-.main-header(ng-hide='poplib==0')
-  h1 Poplibs.
-  h2 Madlibs on the internet.
-  button(ng-click="randomLib()") Next Poplib
+.main-header
+
+  h1(ng-hide="poplib==0") Poplibs.
+  h2(ng-hide="poplib==0") Madlibs on the internet.
+  button(ng-click="randomLib()", ng-hide="poplib==0") Next Poplib
   svg(viewbox='0 0 2854 244', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
   
     title Path 3
@@ -11,7 +12,9 @@
     g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
       path#Path-3(d='M0.78125,193.015625 C119.71875,193.015625 102.75,123.71875 220.828125,123.71875 C338.90625,123.71875 326.5,243.890625 437.171875,243.890625 C547.84375,243.890625 551.671875,42.375 661.90625,42.375 C772.140625,42.375 764.84375,135.453125 879.328125,135.453125 C993.8125,135.453125 993.625,87.59375 1098.40625,87.59375 C1203.1875,87.59375 1211.10937,189.203125 1317.46875,189.203125 C1423.82813,189.203125 1430.26563,34.578125 1539.57812,34.578125 C1648.89062,34.578125 1643.3125,55.59375 1753.95312,55.59375 C1864.59375,55.59375 1866.60938,30.109375 1976.64062,30.109375 C2086.67188,30.109375 2085.5625,209.484375 2193.95312,209.484375 C2302.34375,209.484375 2307.92188,85.578125 2415.40625,85.578125 C2522.89062,85.578125 2528.79688,147.71875 2631.1875,147.71875 C2733.57812,147.71875 2742.64062,53.4375 2853.96875,53.4375 C2853.96875,55.59375 2853.96875,0.818018679 2853.96875,0.818018679 L2.20515384,0.818018679 C2.20515384,0.818018679 0.78125,147.71875 0.78125,193.015625 Z', fill='#02BFFD')
 
+
 .main-content.hero(ng-show='poplib==0')
+  
   .container
     .title
       h1 Poplibs.
@@ -24,6 +27,9 @@
       span .
     p.sublead We ask you for some words, you get a funny little story.
     button(ng-click="randomLib()") Write a Poplib
+  .container.small
+    span little thing by 
+    a(href="http://mitchmalone.design", target="_blank") Mitch Malone
 .main-content(ng-show='poplib==1')
   .container
     h4 Buddy Cops!
@@ -213,6 +219,136 @@
     
     
     button(ng-click="show = !show") Read Story
+.main-content(ng-show='poplib==7')
+  .container
+    h4 Sea Quest!
+    .input-group
+      label Adjective
+      .input
+        input(type="text", ng-model="adjective")
+    .input-group
+      label Another Adjective
+      .input
+        input(type="text", ng-model="adjective2")
+    .input-group
+      label A girl's name
+      .input
+        input(type="text", ng-model="name")
+    .input-group
+      label A boy's name
+      .input
+        input(type="text", ng-model="name2")
+    .input-group
+      label A type of Monster (plural)
+      .input
+        input(type="text", ng-model="monster")
+    .input-group
+      label Job
+      .input
+        input(type="text", ng-model="job")
+    .input-group
+      label Noun
+      .input
+        input(type="text", ng-model="noun")
+
+    
+    
+    button(ng-click="show = !show") Read Story
+.main-content(ng-show='poplib==8')
+  .container
+    h4 Epic Quest!
+    .input-group
+      label An Evil, Mythical Object
+      .input
+        input(type="text", ng-model="noun")
+    .input-group
+      label A Mythical Creature
+      .input
+        input(type="text", ng-model="monster")
+    .input-group
+      label The Mythical Creature's Name
+      .input
+        input(type="text", ng-model="name")
+    .input-group
+      label An Awesome Nickname
+      .input
+        input(type="text", ng-model="name2")
+    .input-group
+      label Noun
+      .input
+        input(type="text", ng-model="noun")
+    
+    button(ng-click="show = !show") Read Story
+  
+.main-content(ng-show='poplib==9')
+  .container
+    h4 Space Quest!
+    .input-group
+      label Adjective
+      .input
+        input(type="text", ng-model="adjective")
+    .input-group
+      label Name
+      .input
+        input(type="text", ng-model="name")
+    .input-group
+      label A girl's name
+      .input
+        input(type="text", ng-model="name2")
+    .input-group
+      label A boy's name
+      .input
+        input(type="text", ng-model="name3")
+    .input-group
+      label Another boy's name
+      .input
+        input(type="text", ng-model="noun4")
+    .input-group
+      label Name of a space ship
+      .input
+        input(type="text", ng-model="ship")
+    .input-group
+      label Name for a robot
+      .input
+        input(type="text", ng-model="name5")
+    .input-group
+      label Another Name for a robot
+      .input
+        input(type="text", ng-model="name6")
+    
+    button(ng-click="show = !show") Read Story
+    
+.main-content(ng-show='poplib==10')
+  .container
+    h4 Mermaids!
+    .input-group
+      label Adjective
+      .input
+        input(type="text", ng-model="adjective")
+    .input-group
+      label A girl's name
+      .input
+        input(type="text", ng-model="name")
+    .input-group
+      label A boy's name
+      .input
+        input(type="text", ng-model="name2")
+    .input-group
+      label Another girl's name
+      .input
+        input(type="text", ng-model="name3")
+    .input-group
+      label Job
+      .input
+        input(type="text", ng-model="job")
+    .input-group
+      label Noun (Plural)
+      .input
+        input(type="text", ng-model="noun")
+    
+    button(ng-click="show = !show") Read Story
+    
+    
 .lightbox(ng-show='show')
   .modal
     p.lead(ng-show="poplib==1")
@@ -240,13 +376,37 @@
     p.lead(ng-show='poplib==5')
       | Against the advice of locals and police, {{name}} scours the eerie {{place}} 
       | surrounding Crystal Lake for his missing {{relative}}. But the {{adjective}} {{noun}} of an abandoned summer camp are 
-      | not the only things he finds. {{adjective2}} killer Jason Voorhees lies in wait for a chance to use his 
+      | not the only things he finds. 
+      span.capitalize {{adjective2}} killer Jason Voorhees lies in wait for a chance to use his 
       | razor-sharp {{noun2}} on {{name}} and the group of college students who have come to the forest to {{verb}}.
     p.lead(ng-show='poplib==6')
       | When their kingdom becomes trapped in perpetual winter, {{adjective}} Anna joins forces with 
       | {{job}} Kristoff and his {{animal}} sidekick to find Anna's sister, Snow Queen Elsa, 
       | and break her icy spell. Although their epic journey leads them to encounters with {{adjective3}} 
-      | {{monster}}, a {{adjective2}} snowman, harsh conditions, and magic at every turn, Anna and 
+      | {{monster}}, {{adjective2}} snowmen, harsh conditions, and magic at every turn, Anna and 
       | Kristoff bravely push onward in a race to save their kingdom from winter's cold grip.
+    p.lead(ng-show='poplib==7')
+      | An adventurous teenager sails out on a daring mission to save her people. During her journey, 
+      | {{name}} meets the once-mighty demigod {{name2}}, who guides her in her quest to become a 
+      | master {{job}}. Together they sail across the open ocean on an {{adjective}} voyage, 
+      | encountering enormous {{monster}} and {{adjective2}} odds. Along the way, {{name}} fulfills 
+      | the ancient quest of her ancestors and discovers the one thing she always sought: her {{noun}}.
+    p.lead(ng-show='poplib==8')
+      | The future of civilization rests in the fate of the {{noun}}, which has been lost for centuries. 
+      | Powerful forces are unrelenting in their search for it. But fate has placed it in the hands of 
+      | a young {{monster}} named {{name}}, who inherits the {{noun}} and steps into legend. A daunting 
+      | task lies ahead for {{name}} when he becomes the {{name2}} - to destroy the {{noun}} in the fires 
+      | of Mount {{noun2}} where it was forged.
+    p.lead(ng-show='poplib==9')
+      | The Imperial Forces -- under orders from {{adjective}} {{name}} -- hold Princess {{name2}} hostage, in their 
+      | efforts to quell the rebellion against the Galactic Empire. {{name3}} and {{name4}}, captain of the 
+      | {{ship}}, work together with the companionable droid duo {{name5}} and {{name6}} to rescue the 
+      | beautiful princess, help the Rebel Alliance, and restore freedom and justice to the Galaxy.
+    p.lead(ng-show='poplib==10')
+      | Rebellious 16-year-old mermaid {{name}} is fascinated with {{noun}} on land. On one of her 
+      | visits to the surface, which are forbidden by her {{adjective}} father, King {{name2}}, she falls for a 
+      | human {{job}}. Determined to be with her new love, {{name}} makes a dangerous deal with the sea witch 
+      | {{name3}} to become human for three days. But when plans go awry for the star-crossed lovers, 
+      | the king must make the ultimate sacrifice for his daughter.
     button(ng-click="newLib()") Do Another
     button(ng-click="redoLib()") Redo This One

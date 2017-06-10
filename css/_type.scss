@@ -69,7 +69,18 @@ button + button {
 }
 
 .sublead {
-  font-size:1.5em;
+  font-size:1.25em;
   font-weight: 300;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
+}
+
+a {
+  color:$mainColor;
+  text-decoration: none;
+  &:hover {
+    color:lighten($mainColor, 5%);
+  }
+  &:focus {
+    color:lighten($mainColor, 5%);
+  }
 }

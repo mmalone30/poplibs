@@ -37,24 +37,58 @@ body {
   padding:3em;
   padding-bottom:6em;
   background:$mainColor;
+  min-height: 180px;
   color:white;
   animation-name:fadeIn;
   animation-duration: 0.75s;
   animation-fill-mode: backwards;
   animation-iteration-count: 1;
+  h1.ng-hide-remove {
+    animation-name:fadeInFromBottom;
+    animation-duration: 0.75s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-delay: 0.25s;
+  }
   h2 {
     font-weight: 400;
     margin-left: 0.5em;
     flex:1;
+    &.ng-hide-remove {
+      animation-name:fadeInFromBottom;
+      animation-duration: 0.75s;
+      animation-fill-mode: backwards;
+      animation-iteration-count: 1;
+      animation-delay: 0.38s;
+    }
   }
   svg {
     position: absolute;
-    top: 182px;
+    top: 180px;
     left: 0px;
     right: 0;
     width: 100%;
     transform:scale(1.01);
   }
+  .title {
+    flex:1;
+    text-align: center;
+    &.ng-hide-add {
+      animation-name:fadeOutToBottom;
+      animation-duration: 0.75s;
+      animation-fill-mode: backwards;
+      animation-iteration-count: 1;
+
+    }
+  }
+  button.ng-hide-remove {
+    animation-name:fadeInFromBottom;
+    animation-duration: 0.75s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
+  }
+
 }
 
 .main-content {
@@ -70,18 +104,23 @@ body {
 
 .main-content.hero {
   bottom:0;
-  top:0;
+  top:8em;
   position:absolute;
 
+  margin-bottom: 0;
   bottom: 0;
-  display:flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
+
   .container {
-    padding:0;
-    box-shadow: 0 0 0 0;
-    background:transparent;
+    max-width: 48em;
+    padding:6em;
+    &.small {
+      padding: 0;
+      background: transparent;
+      box-shadow: 0 0 0;
+      margin: 2em auto 8em auto;
+      font-size:floor($fontSize*0.85);
+    }
   }
 
   .title {
@@ -94,10 +133,7 @@ body {
     }
   }
   .adjective, .noun {
-    background:$faintBlue;
     color:$mainColor;
-    padding:0 0.15em;
-    border-radius: 3px;
   }
   .adjective {
     display: inline-block;
@@ -105,7 +141,7 @@ body {
 
   }
   .lead {
-    font-size:4em;
+    font-size:3em;
     font-weight: bold;
     line-height: 1.25;
     margin-bottom: 0.25em;
