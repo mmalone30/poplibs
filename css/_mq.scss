@@ -7,13 +7,21 @@
     font-size: 13px;
   }
   .main-header {
+    padding:2em 1.5em;
+    svg {
+      top:84px;
+    }
     h2 {
       font-size:0;
     }
   }
   .main-content {
     padding:1.5em;
-    top:55px;
+    padding-top:0;
+    top:6em;
+  }
+  .container {
+    padding:2em;
   }
   .lightbox {
     .modal {

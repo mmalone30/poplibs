@@ -13,7 +13,7 @@ html {
 body {
   font-family: $font;
   color: $textColor;
-
+  background:$faintestBlue;
   margin: 0;
   padding:0;
   font-weight:400;
@@ -34,7 +34,8 @@ body {
 .main-header {
   display:flex;
   align-items: baseline;
-  padding:1em;
+  padding:3em;
+  padding-bottom:6em;
   background:$mainColor;
   color:white;
   animation-name:fadeIn;
@@ -46,14 +47,23 @@ body {
     margin-left: 0.5em;
     flex:1;
   }
+  svg {
+    position: absolute;
+    top: 182px;
+    left: 0px;
+    right: 0;
+    width: 100%;
+    transform:scale(1.01);
+  }
 }
 
 .main-content {
   padding:3em;
-
+  padding-top:0;
+  margin-bottom: 3em;
   transition: all linear 0.5s;
   position:absolute;
-  top:70px;
+  top:8em;
   right:0em;
   left:0em;
 }
@@ -61,10 +71,19 @@ body {
 .main-content.hero {
   bottom:0;
   top:0;
+  position:absolute;
+
+  bottom: 0;
   display:flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  .container {
+    padding:0;
+    box-shadow: 0 0 0 0;
+    background:transparent;
+  }
+
   .title {
     display:flex;
     align-items: baseline;
@@ -73,6 +92,17 @@ body {
     h1 {
       margin-right: 0.5em;
     }
+  }
+  .adjective, .noun {
+    background:$faintBlue;
+    color:$mainColor;
+    padding:0 0.15em;
+    border-radius: 3px;
+  }
+  .adjective {
+    display: inline-block;
+    margin-right: 12px;
+
   }
   .lead {
     font-size:4em;
@@ -87,7 +117,7 @@ body {
 }
 
 .main-content.ng-hide-add{
-  animation-name:fadeOutToLeft;
+  animation-name:fadeOutToBottom;
   animation-duration: 0.75s;
   animation-fill-mode: backwards;
   animation-iteration-count: 1;
@@ -95,7 +125,7 @@ body {
 }
 
 .main-content.ng-hide-remove {
-  animation-name:fadeInFromRight;
+  animation-name:fadeInFromBottom;
   animation-duration: 0.75s;
   animation-fill-mode: backwards;
   animation-iteration-count: 1;
@@ -104,7 +134,10 @@ body {
 
 .container {
   max-width:40em;
-
+  background:white;
+  box-shadow:0 12px 60px rgba(0,0,0,0.1);
+  border-radius:5px;
+  padding:3em;
   margin:0 auto;
   position:relative;
   min-height: 1px;
@@ -180,7 +213,7 @@ body {
     background:white;
     color:$textColor;
     padding:4em;
-    max-width: 48em;
+    max-width: 60em;
     margin:0 auto;
     border-radius:3px;
     box-shadow:0 15px 50px rgba(0,0,0,0.2);
@@ -217,4 +250,9 @@ body {
     animation-iteration-count: 1;
     //animation-delay: 0.5s;
   }
+}
+
+footer.main-footer {
+  background:$lightBlue;
+  padding:2em;
 }
