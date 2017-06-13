@@ -40,6 +40,7 @@ app.controller('appCtrl', function ($scope, $timeout) {
       $scope.nickname = '';
       $scope.death = '';
       $scope.noun = '';
+      $scope.noun2 = '';
       $scope.codeName = '';
       $scope.codeName2 = '';
       $scope.thingToSteal = '';
@@ -76,6 +77,7 @@ app.controller('appCtrl', function ($scope, $timeout) {
     $scope.nickname = '';
     $scope.death = '';
     $scope.noun = '';
+    $scope.noun2 = '';
     $scope.codeName = '';
     $scope.codeName2 = '';
     $scope.thingToSteal = '';
