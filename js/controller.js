@@ -33,6 +33,7 @@ app.controller('appCtrl', function ($scope, $timeout) {
       lib = lib + 1;
       lib = lib % libs.length;
       $scope.poplib = libs[lib];
+      $scope.name = '';
       $scope.name1 = '';
       $scope.number = '';
       $scope.name2 = '';
@@ -70,6 +71,7 @@ app.controller('appCtrl', function ($scope, $timeout) {
 
   $scope.redoLib = function(){
     $scope.show = !$scope.show;
+    $scope.name = '';
     $scope.name1 = '';
     $scope.number = '';
     $scope.name2 = '';
