@@ -1,5 +1,5 @@
 
-.main-header
+.main-header(ng-class='{"hero":poplib==0}')
 
   h1 Poplibs.
   
@@ -11,17 +11,13 @@
   
   .container
     
-    p.lead 
-      span Write 
-      span.adjective {{adjectives[adjectiveIndex]}}
-      span stories with your 
-      span.noun {{nouns[nounIndex]}}
-      span .
+    p.lead Madlibs on the internet.
+      
     p.sublead We ask you for some words, you get a funny little story.
     button(ng-click="randomLib()") Write a Poplib
-  .container.small
-    span little thing by 
-    a(href="http://mitchmalone.design", target="_blank") Mitch Malone
+    
+  
+    
 .main-content(ng-show='poplib==1')
   .container
     h4 Buddy Cops!
@@ -123,6 +119,8 @@
 .main-content(ng-show='poplib==4')
   .container
     h4 Aliens!
+  .container
+    
     .input-group
       label Adjective
       .input
@@ -149,6 +147,8 @@
 .main-content(ng-show='poplib==5')
   .container
     h4 Slasher!
+  .container
+    
     .input-group
       label Adjective
       .input
@@ -188,6 +188,7 @@
 .main-content(ng-show='poplib==6')
   .container
     h4 Frozen!
+  .container
     .input-group
       label Adjective
       .input
@@ -219,6 +220,7 @@
 .main-content(ng-show='poplib==7')
   .container
     h4 Sea Quest!
+  .container
     .input-group
       label Adjective
       .input
@@ -254,6 +256,8 @@
 .main-content(ng-show='poplib==8')
   .container
     h4 Epic Quest!
+  .container
+    
     .input-group
       label An Evil, Mythical Object
       .input
@@ -280,6 +284,7 @@
 .main-content(ng-show='poplib==9')
   .container
     h4 Space Quest!
+  .container
     .input-group
       label Adjective
       .input
@@ -318,6 +323,7 @@
 .main-content(ng-show='poplib==10')
   .container
     h4 Mermaids!
+  .container
     .input-group
       label Adjective
       .input
