@@ -20,13 +20,13 @@ app.controller('appCtrl', function ($scope, $timeout) {
     lib = lib % libs.length;
     $scope.poplib = libs[lib];
     console.log(libs[lib]);
-    document.body.scrollTop = 0;
+    window.scrollTo(0,0);
   }
 
   $scope.newLib = function(){
     $scope.doAnother = !$scope.doAnother;
     $scope.show = !$scope.show;
-    document.body.scrollTop = 0;
+    window.scrollTo(0,0);
 
     $timeout(function(){
 
@@ -99,7 +99,7 @@ app.controller('appCtrl', function ($scope, $timeout) {
     $scope.name4 = '';
     $scope.name5 = '';
     $scope.name6 = '';
-    document.body.scrollTop = 0;
+    window.scrollTo(0,0);
 
     //debugger;
   }

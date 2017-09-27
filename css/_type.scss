@@ -27,7 +27,7 @@ h2 {
 
 h4 {
   font-size:2em;
-  margin-bottom: 0.75em;
+  text-align: center;
 }
 
 button {
@@ -35,10 +35,12 @@ button {
   color:white;
   border:0;
   border-radius:3px;
-  padding:0.5em 1em;
+  padding:1em 2em;
   font-family: $font;
   font-size:1em;
+  line-height: $lineHeight;
   transition:all ease-in-out 75ms;
+  box-shadow:0 1px 6px rgba(0,0,0,0.2);
   cursor: pointer;
   &:hover {
     transform:translateY(-1px);

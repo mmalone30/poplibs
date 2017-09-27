@@ -13,7 +13,7 @@ html {
 body {
   font-family: $font;
   color: $textColor;
-  background:$faintestBlue;
+  background:$mainColor;
   margin: 0;
   padding:0;
   font-weight:400;
@@ -29,15 +29,15 @@ body {
 // MAIN COMPONENTS //
 ////////////////////
 
-
-
 .main-header {
   display:flex;
+  justify-content: space-between;
   align-items: baseline;
-  padding:3em;
+  padding:0 3em 3em 3em;
   padding-bottom:6em;
-  background:$mainColor;
-  min-height: 180px;
+  background-color:white;
+  background-image:url("../images/confetti5.svg");
+  min-height: 32em;
   color:white;
   animation-name:fadeIn;
   animation-duration: 0.75s;
@@ -49,6 +49,10 @@ body {
     animation-fill-mode: backwards;
     animation-iteration-count: 1;
     animation-delay: 0.25s;
+  }
+  h1 {
+    background:$logoColor;
+    padding:1em;
   }
   h2 {
     font-weight: 400;
@@ -97,7 +101,7 @@ body {
   margin-bottom: 3em;
   transition: all linear 0.5s;
   position:absolute;
-  top:8em;
+  top:12em;
   right:0em;
   left:0em;
 }
@@ -173,11 +177,16 @@ body {
   background:white;
   box-shadow:0 12px 60px rgba(0,0,0,0.1);
   border-radius:5px;
-  padding:3em;
+  padding:2em;
   margin:0 auto;
   position:relative;
   min-height: 1px;
 }
+
+.container + .container {
+  margin-top:2em;
+}
+
 ////////////
 //  FORMS //
 ////////////

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="173 95 179 103 167 103"></polygon>
+        <polygon id="path-2" points="15 194 21 202 9 202"></polygon>
+        <polygon id="path-3" points="173 95 179 103 167 103"></polygon>
+        <polygon id="path-4" points="15 162 21 170 9 170"></polygon>
+        <polygon id="path-5" points="173 138 179 146 167 146"></polygon>
+        <polygon id="path-6" points="15 237 21 245 9 245"></polygon>
+        <polygon id="path-7" points="8 226 14 234 2 234"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <g id="Group-2" transform="translate(33.000000, 12.000000)">
+                <circle id="Oval" fill="#4250AF" cx="47" cy="132" r="8"></circle>
+                <circle id="Oval" fill="#50E3C2" cx="46" cy="4" r="4"></circle>
+                <g id="Triangle" stroke-linecap="round" stroke-linejoin="round" transform="translate(173.000000, 99.000000) rotate(-45.000000) translate(-173.000000, -99.000000) ">
+                    <use fill="#CF529D" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <path stroke="#CF529D" stroke-width="2" d="M173,93.3333333 L181,104 L165,104 L173,93.3333333 Z"></path>
+                </g>
+                <g id="Triangle" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.000000, 198.000000) rotate(-225.000000) translate(-15.000000, -198.000000) ">
+                    <use fill="#CF529D" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <path stroke="#CF529D" stroke-width="2" d="M15,192.333333 L23,203 L7,203 L15,192.333333 Z"></path>
+                </g>
+                <circle id="Oval" fill="#4250AF" cx="111" cy="36" r="8"></circle>
+                <polyline id="Path-4" stroke="#02BFFD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(13.011580, 67.432146) rotate(-45.000000) translate(-13.011580, -67.432146) " points="-2.97759702 69.6210853 0.974704511 65.6687837 4.85792529 69.5520045 8.99497648 65.4149533 12.9339714 69.3539483 17.0447135 65.2432062 21.1302549 69.3287477 25.0594399 65.3995627 29.0007578 69.3408806"></polyline>
+                <polyline id="Path-4" stroke="#02BFFD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(176.011580, 34.432146) scale(-1, 1) rotate(-45.000000) translate(-176.011580, -34.432146) " points="160.022403 36.6210853 163.974705 32.6687837 167.857925 36.5520045 171.994976 32.4149533 175.933971 36.3539483 180.044713 32.2432062 184.130255 36.3287477 188.05944 32.3995627 192.000758 36.3408806"></polyline>
+            </g>
+            <g id="Group-2" transform="translate(387.500000, 131.000000) scale(-1, 1) translate(-387.500000, -131.000000) translate(297.000000, 44.000000)">
+                <circle id="Oval" fill="#4250AF" cx="78" cy="69" r="8"></circle>
+                <circle id="Oval" fill="#50E3C2" cx="46" cy="4" r="4"></circle>
+                <circle id="Oval" fill="#50E3C2" cx="143" cy="133" r="4"></circle>
+                <g id="Triangle" stroke-linecap="round" stroke-linejoin="round" transform="translate(173.000000, 99.000000) rotate(-45.000000) translate(-173.000000, -99.000000) ">
+                    <use fill="#CF529D" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <path stroke="#CF529D" stroke-width="2" d="M173,93.3333333 L181,104 L165,104 L173,93.3333333 Z"></path>
+                </g>
+                <g id="Triangle" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.000000, 166.000000) rotate(-225.000000) translate(-15.000000, -166.000000) ">
+                    <use fill="#CF529D" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <path stroke="#CF529D" stroke-width="2" d="M15,160.333333 L23,171 L7,171 L15,160.333333 Z"></path>
+                </g>
+                <polyline id="Path-4" stroke="#02BFFD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(13.011580, 36.432146) rotate(-45.000000) translate(-13.011580, -36.432146) " points="-2.97759702 38.6210853 0.974704511 34.6687837 4.85792529 38.5520045 8.99497648 34.4149533 12.9339714 38.3539483 17.0447135 34.2432062 21.1302549 38.3287477 25.0594399 34.3995627 29.0007578 38.3408806"></polyline>
+            </g>
+            <g id="Group-2" transform="translate(33.000000, 227.000000)">
+                <circle id="Oval" fill="#4250AF" cx="47" cy="175" r="8"></circle>
+                <circle id="Oval" fill="#50E3C2" cx="46" cy="47" r="4"></circle>
+                <circle id="Oval" fill="#50E3C2" cx="207" cy="239" r="4"></circle>
+                <g id="Triangle" stroke-linecap="round" stroke-linejoin="round" transform="translate(173.000000, 142.000000) rotate(-45.000000) translate(-173.000000, -142.000000) ">
+                    <use fill="#CF529D" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    <path stroke="#CF529D" stroke-width="2" d="M173,136.333333 L181,147 L165,147 L173,136.333333 Z"></path>
+                </g>
+                <g id="Triangle" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.000000, 241.000000) rotate(-225.000000) translate(-15.000000, -241.000000) ">
+                    <use fill="#CF529D" fill-rule="evenodd" xlink:href="#path-6"></use>
+                    <path stroke="#CF529D" stroke-width="2" d="M15,235.333333 L23,246 L7,246 L15,235.333333 Z"></path>
+                </g>
+                <circle id="Oval" fill="#4250AF" cx="111" cy="79" r="8"></circle>
+                <polyline id="Path-4" stroke="#02BFFD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(13.011580, 110.432146) rotate(-45.000000) translate(-13.011580, -110.432146) " points="-2.97759702 112.621085 0.974704511 108.668784 4.85792529 112.552005 8.99497648 108.414953 12.9339714 112.353948 17.0447135 108.243206 21.1302549 112.328748 25.0594399 108.399563 29.0007578 112.340881"></polyline>
+                <polyline id="Path-4" stroke="#02BFFD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(240.011580, 13.432146) scale(-1, 1) rotate(-45.000000) translate(-240.011580, -13.432146) " points="224.022403 15.6210853 227.974705 11.6687837 231.857925 15.5520045 235.994976 11.4149533 239.933971 15.3539483 244.044713 11.2432062 248.130255 15.3287477 252.05944 11.3995627 256.000758 15.3408806"></polyline>
+            </g>
+            <g id="Group-2" transform="translate(399.000000, 357.000000) scale(-1, 1) translate(-399.000000, -357.000000) translate(327.000000, 238.000000)">
+                <circle id="Oval" fill="#4250AF" cx="136" cy="132" r="8"></circle>
+                <circle id="Oval" fill="#50E3C2" cx="72" cy="4" r="4"></circle>
+                <circle id="Oval" fill="#50E3C2" cx="136" cy="194" r="4"></circle>
+                <g id="Triangle" stroke-linecap="round" stroke-linejoin="round" transform="translate(8.000000, 230.000000) rotate(-225.000000) translate(-8.000000, -230.000000) ">
+                    <use fill="#CF529D" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    <path stroke="#CF529D" stroke-width="2" d="M8,224.333333 L16,235 L3.99680289e-15,235 L8,224.333333 Z"></path>
+                </g>
+                <polyline id="Path-4" stroke="#02BFFD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(71.011580, 66.432146) rotate(45.000000) translate(-71.011580, -66.432146) " points="55.022403 68.6210853 58.9747045 64.6687837 62.8579253 68.5520045 66.9949765 64.4149533 70.9339714 68.3539483 75.0447135 64.2432062 79.1302549 68.3287477 83.0594399 64.3995627 87.0007578 68.3408806"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
