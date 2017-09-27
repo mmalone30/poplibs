@@ -7,8 +7,8 @@
     font-size: 13px;
   }
   .main-header {
-    padding:2em 1.5em;
-    min-height: 84px;
+    padding:0 2em 1.5em;
+    min-height: 24em;
     svg {
       top:84px;
     }
@@ -19,7 +19,7 @@
   .main-content, .main-content.hero {
     padding:1.5em;
     padding-top:0;
-    top:6em;
+    top:8em;
   }
   .container {
     padding:2em;
