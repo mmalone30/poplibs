@@ -96,6 +96,28 @@
   }
 }
 
+@keyframes fromBottomToTop {
+  0% {
+
+    transform: translateY(8em);
+  }
+  100% {
+
+    transform: translateY(0em);
+  }
+}
+
+@keyframes fromTopToBottom {
+  0% {
+
+    transform: translateY(0em);
+  }
+  100% {
+
+    transform: translateY(8em);
+  }
+}
+
 .fadeOut {
   animation-name:fadeOut;
   animation-duration: 0.5s;

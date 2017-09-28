@@ -164,18 +164,47 @@ body {
 }
 
 .main-content.ng-hide-add{
-  animation-name:fadeOutToBottom;
+  animation-name:fadeOut;
   animation-duration: 0.75s;
   animation-fill-mode: backwards;
   animation-iteration-count: 1;
+  
+  .container {
+    animation-name:fromTopToBottom;
+    animation-duration: 1.25s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-delay:0.2s;
+  }
+  .container + .container {
+    animation-name:fromTopToBottom;
+    animation-duration: 1.25s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+  }
 }
 
 .main-content.ng-hide-remove {
-  animation-name:fadeInFromBottom;
+  animation-name:fadeIn;
   animation-duration: 0.75s;
   animation-fill-mode: backwards;
   animation-iteration-count: 1;
   animation-delay: 0.75s;
+  .container {
+    animation-name:fromBottomToTop;
+    animation-duration: 1.25s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-delay: 0.2s;
+  }
+  .container + .container {
+    animation-name:fromBottomToTop;
+    animation-duration: 1.25s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+  }
 }
 
 .container {
