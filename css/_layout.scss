@@ -129,16 +129,19 @@ body {
 
 .main-content.hero {
   bottom:0;
-  top:12em;
+  top:7em;
   position:absolute;
 
   margin-bottom: 0;
   bottom: 0;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .container {
     max-width: 48em;
-    padding:6em;
+    padding:4em;
     &.small {
       padding: 0;
       background: transparent;
@@ -166,7 +169,7 @@ body {
 
   }
   .lead {
-    font-size:3em;
+    font-size:2em;
     font-weight: bold;
     line-height: 1.25;
     margin-bottom: 0.25em;
