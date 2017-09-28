@@ -15,6 +15,14 @@
     h2 {
       font-size:0;
     }
+    nav {
+      h1 {
+        background:white;
+        color:$logoColor;
+        padding:0;
+        transform:translateY(0);
+      }
+    }
   }
   .main-content, .main-content.hero {
     padding:1.5em;

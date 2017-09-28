@@ -61,7 +61,7 @@ app.controller('appCtrl', function ($scope, $timeout) {
       $scope.name4 = '';
       $scope.name5 = '';
       $scope.name6 = '';
-    },650);
+    },725);
 
 
 
